@@ -24,7 +24,8 @@ Desenvolvimento Job Com Spring Batch
   
     * é possivel configurar para que rode uma vez ou sempre.
   
-    * por default executa somente uma vez. 
+    * por default executa somente uma vez e salva os metados no banco, ao tentar rodar novamente ele sempre ira olhar os metadados no banco. 
+      somente a fins de teste e possivel passar um 	incrementer(new RunIdIncrementer()) para criar um novo contexto do mesmo job. 
 
 -  Step 
    
