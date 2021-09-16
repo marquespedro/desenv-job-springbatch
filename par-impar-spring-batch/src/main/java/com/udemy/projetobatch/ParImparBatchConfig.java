@@ -38,6 +38,14 @@ public class ParImparBatchConfig {
 				.build();
 	}
 
+	/**
+	 * o tamanho do chunk deve ser compativel com o tamanho disponivel em memoria
+	 * para processamento dos dados.
+	 * o numero de commits ou seja transacoes com banco ira depender do tamanho do chunk
+	 * ou seja quando maior o chunk menor o numero de transacoes aberta com banco dados.
+	 * 
+	 * @return
+	 */
 	public Step imprimeParImparStep() {
 		return stepBuilderFactory
 				.get("imprimeParImparStep")
